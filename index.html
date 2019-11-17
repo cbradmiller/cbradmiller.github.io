@@ -1,27 +1,61 @@
 <!DOCTYPE HTML>
 
 <html>
+    
     <head>
         <meta charset="UTF-8">
         <title>Not very good</title>
+        <script src=“https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js”></script>
+<script>window.jQuery || document.write(’<script src="/js/jquery-1.12.4.min.js">\x3C/script>’)</script>
+<script src=“https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js”></script>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <!-- <!–– my navigation bar ––> -->
-        <nav class="navbar sticky-top navbar-light bg-light">
+        <!-- <nav class="navbar sticky-top navbar-light bg-light">
           <ul>
               <li class="Latitude"><a class="Latitude" color=black>Latitude</a></li>
             <li ><a class="nav-link" >Data</a></li>
             <li ><a class="nav-link" >Comparison</a></li>
-            <li class='dropdown show' ><a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <li class='dropdown show' >
+            <button class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Dropdown link
-              </a>
+            </button>
             
-            <li class="dropdown-menu" aria-labelledby="dropdownMenuLink"> <a class="dropdown-item">Action</a>
+            <li class="dropdown-menu" aria-labelledby="dropdownMenuLink"> 
+                <a class="dropdown-item" href="#">Action</a>
                 <a class="dropdown-item">Action</a></li>
             </li>
           </ul>
-        </nav>
-       
+        </nav> -->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#TOP">Latitude<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#latitudeVwindVdog">Latitude vs Wind</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown link
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
     </head>
 
     <body>
@@ -30,6 +64,7 @@
 <div class='parallax-wrapper'>
     <!-- <div class='content'> -->
         <div class='container-fluid'>
+            <a name="TOP"></a>
             
                 <div class='row'>
                     <div class='col-sm'>
@@ -41,13 +76,11 @@
                     </div>
                     <div class='col-sm' >
                         <p>
-                                This purpose of this project is to learn HTML, CSS, and BootStrap. 
-                                The only problem I have with this, is that I stopped learning learning web design 5 years ago because I did not enjoy it. 
-                                I swore it off then, and I am now regretting wiping the laptop that contained the web pages I created oh-so-long ago. 
-                                It would have been great to review them for this assignment.
-                                My memory of this material, just like the hdd on that laptop, has been wiped...
+                                My original plan for this assignment was to actually do the assignment, but then I got distracted my tring to figure out Parallax Scrolling. 
                             </p>
-                            <p>Go click stuff</p>
+                            <p>Unfortunately, I never got the dropdown menu to work...</p>
+                            <p>Fortunately, the parallax scrolling works!</p>
+                            <p>If you click the Latitude vs Wind button, you'll be brought to a scatter plot</p>
                     </div>
                      
                      
@@ -82,12 +115,10 @@
                 </div>
                 <div class='col-sm'>
                         <p>
-                                This purpose of this project is to learn HTML, CSS, and BootStrap. 
-                                The only problem I have with this, is that I stopped learning learning web design 5 years ago because I did not enjoy it. 
-                                I swore it off then, and I am now regretting wiping the laptop that contained the web pages I created oh-so-long ago. 
-                                It would have been great to review them for this assignment.
-                                My memory of this material has been wiped...
-                            </p>
+                                So I decided to do this a bit differently because I wanted to play with Parallax Scrolling. I could have created different pages for everything, but that seemed boring.
+                                    Instead, all buttons at the top link to different parts of the page. 
+                                </p>
+                            <p>If you click the Latitude button, you will be brought back to the top of the page.</p>
                 </div>
                  
                  
@@ -106,8 +137,81 @@
 </div>
 </div>
 </div>
+<div class='parallax-wrapper'>
+        <!-- <div class='content'> -->
+            <div class='container-fluid'>
+                
+                    <div class='row'>
+                        <div class='col-sm'>
+                                <a name="latitudeVwindVdog"></a>
+                        
+                            
+                               <img id=Bigimg src="https://github.com/cbradmiller/cbradmiller.github.io/blob/master/Fig4.png?raw=true" class="rounded float-left" width='650' height='450' >
+                               
+                        </div>
+                        <div class='col-sm' >
+                            <p>
+                                   On the left, we have a scatter plot displaying City Latitude VS Wind Speed. On the right, we have a dog in a sweater.
+                                </p>
+                                <p>The dog's name is Dax</p>
+                        </div>
+                         
+                         
+                       
+                        
+    
+                        <div class='col-sm'>
+                      
+                                <img id='img' src="https://github.com/cbradmiller/cbradmiller.github.io/blob/master/Dax.jpg?raw=true" class="rounded float-left" width='650' height='475' alt='image'>
+                                
+                        </div>
+                        
+             
+                   
+                    </div>
+    
+        </div>
+        <!-- </div> -->
+    </div>
+    <div class='regular-wrapper'>
+    
 
-
+            <div class='container-fluid'>
+                    
+                    <div class='row'>
+                        <div class='col-sm'>
+                            
+                        
+                            
+                               <img id=Bigimg src="https://github.com/cbradmiller/cbradmiller.github.io/blob/master/Fig1.png?raw=true" class="rounded float-left" >
+                               
+                        </div>
+                        <div class='col-sm'>
+                                <p>
+                                        This purpose of this project is to learn HTML, CSS, and BootStrap. 
+                                        The only problem I have with this, is that I stopped learning learning web design 5 years ago because I did not enjoy it. 
+                                        I swore it off then, and I am now regretting wiping the laptop that contained the web pages I created oh-so-long ago. 
+                                        It would have been great to review them for this assignment.
+                                        My memory of this material has been wiped...
+                                    </p>
+                        </div>
+                         
+                         
+                       
+                        
+        
+                        <div class='col-sm'>
+                      
+                                <img id='img' src="https://github.com/cbradmiller/cbradmiller.github.io/blob/master/Fig2.png?raw=trueG" class="rounded float-left" width='300' height="160" alt='image'>
+                                    <img id='img' src="https://github.com/cbradmiller/cbradmiller.github.io/blob/master/Fig3.png?raw=true" class="rounded float-left" width='300' height="160" alt='image'>
+                        </div>
+                        
+             
+                    
+                    
+        </div>
+        </div>
+        </div>
 
     </body>
 </html>
