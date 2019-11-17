@@ -1,0 +1,162 @@
+html {
+    overflow: hidden;
+}
+
+
+nav ul {
+    list-style-type: none;
+    /*list style type dumps the dots */ 
+    margin: 0;
+    padding: 0;
+    /*The overflow property specifies what should happen if content overflows an element's box. */
+    overflow: hidden;
+    background-color: skyblue;
+    position: relative;
+    /*position fixed makes it stay at the spot
+      on the screen even if you scroll down 
+    */
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    border: 2px solid #000;
+}
+
+nav li{
+    border-right: 2px solid #000000;
+    border-left: 2px solid #000000;
+    float: right;
+    background-color: skyblue
+}
+.Latitude {
+    
+    float: left;
+    padding-left: 40px;
+    border-right: 2px solid #000000;
+    border-left: 2px solid #000000;
+    text-align: center
+}
+
+nav li a {
+    display: block;
+    /* color: white; */
+    
+    text-align: center;
+    /*The CSS padding property is used to generate space around an element's content, inside of any defined borders. */
+    padding: 14px 16px;
+    text-decoration: none;
+    border-right: 2px solid #000000;
+    
+}
+/* .Dax {
+    background;
+} */
+nav li a:hover {
+    background-color: #A9A9A9;
+    /* color: white; */
+}
+
+/* .row {
+    
+       border: solid;
+} */
+body {
+    margin: 0;
+    font-size: 26px;
+    height: 100vh;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+}
+.parallax-wrapper {
+    width:100vw;
+    height: 80vh;
+    padding-top: 20vh;
+    padding-bottom: 0vh;
+    box-sizing: border-box;
+    margin: 0;
+    transform-style: preserve-3d;
+   
+}
+
+div {
+    margin: 0;
+}
+.parallax-wrapper::before {
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-image: url('Dax.jpg');
+    /* background-color: #00ccd6;
+    background-image: linear-gradient(90deg, transparent 50%,
+  rgba(255,255,255,.5) 50%);
+    background-size: 50px 50px; */
+    position: absolute;
+    z-index: -1;
+    transform: translateZ(-1px) scale(2);
+
+}
+.regular-wrapper {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 20vh; 
+    z-index: 2;
+    position: relative;
+    background-image: url('Dax.jpg');
+}
+.content {
+    margin: 0 auto;
+    padding: 50px;
+    width: 50%;
+    background: #aaa;
+
+}
+p {
+    color: white
+}
+/* div {
+    vertical-align: baseline;
+} */
+/* .Bigimg {
+width: 50px;
+  height: 30px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0;
+}  */
+
+/* .container {
+    width: 200px;
+    height: 120px;
+} */
+img.resize {
+    max-width:50%;
+    max-height:50%;
+  }
+
+/* resize images */
+/* .container img {
+    width: 100%;
+    height: auto;
+} */
+/* .new {
+    border: solid;
+    table-layout: auto;
+    height: 300px;
+    width: 50%;
+    background-color: powderblue;
+} */
+
+/* #img {
+    size: 100px
+} */
+
+/* .center {
+    width:100px;
+    table-layout:fixed
+} */
+
